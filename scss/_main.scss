@@ -1,0 +1,155 @@
+@import 'variable';
+main {
+    padding: 0;
+    margin: 0;
+  
+    .app-section__sec-two {
+      width: 100%;
+      height: 700px;
+      background-color: $main-background-color;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      padding-top: 87px;
+  
+      h2 {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        text-align: center;
+        color: #464547;
+      }
+  
+      p {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: #666666;
+        margin-top: 40px;
+      }
+  
+      article {
+        display: grid;
+        justify-content: center;
+        gap: 40px;
+        grid-template-areas: 'left right';
+        grid-template-columns: repeat(auto-fit, 416px);
+  
+        .app-section__item1 {
+          grid-area: left;
+        }
+  
+        .app-section__item2 {
+          grid-area: right;
+        }
+  
+        p {
+          text-align: left;
+          margin-top: 48px;
+          width: 416px;
+          height: 172px;
+          font-family: "Source Sans Pro";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          color: #666666;
+        }
+      }
+  
+      button.app-section__button {
+        margin-top: 50px;
+        padding: 5px 18px;
+        font-family: "Oswald Regular";
+        font-size: 14px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: $main-text-color;
+        background: #55c2d8;
+        border-radius: 18px;
+        border: none;
+        transition: 0.7s ;
+        transition: transform 0.3s ease;
+        transform-origin: center left;
+  
+        &:hover {
+          transform: perspective(400px) rotate(20deg);
+        }
+      }
+    }
+  
+    .app-section__sec-three {
+      width: 100%;
+      height: 666px;
+      background-image: url(../assets/background-last.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      padding-top: 87px;
+      position: relative;
+  
+      .app-section__bg-color-overly {
+        top: 0;
+        position: absolute;
+        background-color: rgba(140, 79, 42, 0.3);
+        width: 100%;
+        height: 666px;
+        z-index: 10;
+  
+        h2 {
+          font-family: "Oswald";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 64px;
+          color: $main-text-color;
+          margin-top: 35px;
+        }
+  
+        button.app-section__button {
+          margin-top: 63px;
+          width: 150px;
+          height: 150px;
+          left: 525px;
+          top: 1754px;
+          background: #39c2d7;
+          border-radius: 50%;
+          border: none;
+          transition: 0.7s ;
+  
+          &:hover {
+            background: $main-text-color;
+            transform: scale(0.9);
+          
+          }
+  
+          span {
+            padding-left: 10px;
+            font-size: 70px;
+            color: $main-text-color;
+            border-radius: 2px;
+            &:hover{
+                color: #39c2d7;
+            }
+          }
+        }
+  
+        h3 {
+          margin-top: 70px;
+          font-family: "Source Sans Pro";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 32px;
+          text-align: center;
+          color: $main-text-color;
+        }
+      }
+    }
+  }
+  

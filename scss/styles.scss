@@ -1,0 +1,230 @@
+@import 'main';
+@import 'footer';
+@import 'animation';
+@import 'variable';
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    // overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  li {
+    list-style: none;
+    z-index: 10;
+  }
+  
+  .fa-bars {
+    display: none;
+  }
+  
+  .app-section {
+    &__button {
+      &--read-more {
+    border: none;
+      }
+    }
+  
+    &__header {
+      display: flex;
+      align-items: center;
+      padding-top: 49px;
+  
+      > h3 > a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $main-text-color;
+        width: 91px;
+        height: 16px;
+        padding-left: 152px;
+      }
+  
+      > nav > ul {
+        display: flex;
+        gap: 32px;
+        height: 16px;
+        padding-left: 408px;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: $main-text-color;
+  
+        > li:hover {
+          border-bottom: 1px solid $main-text-color;
+        }
+      }
+    }
+  
+    &__sec-logo-headline {
+      margin-top: 181px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  
+      > img {
+        transition: 0.7s;
+        z-index: 1;
+  
+        &:hover {
+          transform: rotateY(175deg) scale(1.3);
+          -webkit-transform: rotateY(175deg) scale(1.3);
+          -moz-transform: rotateY(175deg) scale(1.3);
+          -ms-transform: rotateY(175deg) scale(1.3);
+          -o-transform: rotateY(175deg) scale(1.3);
+        }
+      }
+  
+      > h1 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        color: $main-text-color;
+      }
+  
+      > p {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: $main-text-color;
+        margin-top: 16px;
+      }
+    }
+}
+  
+  .app-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/background-one.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    > .app-section__animation-divace-stars {
+      position: absolute;
+      top: -78px;
+      right: 9px;
+      animation: stars-point 4s infinite linear;
+      transition: 3ms;
+    }
+  
+    > .app-section__animation-divace {
+      overflow: hidden;
+      position: absolute;
+      top: 80px;
+      right: 0px;
+      animation: glowing-stars 8s infinite linear;
+      transition: 0.7s;
+      -webkit-animation: glowing-stars 8s infinite linear;
+      >img{
+        width: 550px;
+    
+      }
+    }
+  
+    > header {
+      display: flex;
+      align-items: center;
+    }
+  
+    > header {
+      padding-top: 49px;
+    }
+  
+    > header > h3 > a {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 16px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $main-text-color;
+      width: 91px;
+      height: 16px;
+      padding-left: 152px;
+    }
+  
+    > header > nav > ul {
+      display: flex;
+      gap: 32px;
+      height: 16px;
+      padding-left: 408px;
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: $main-text-color;
+    }
+  
+    > header > nav > ul > li:hover {
+      border-bottom: 1px solid $main-text-color;
+    }
+  
+    > .app-section__sec-logo-headline {
+      margin-top: 181px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  
+      > img {
+        transition: 0.7s;
+        z-index: 1;
+  
+        &:hover {
+          transform: rotateY(175deg) scale(1.3);
+        
+        }
+      }
+  
+      > h1 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        color: $main-text-color;
+      }
+  
+      > p {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: $main-text-color;
+        margin-top: 16px;
+      }
+    }
+  
+    
+  }
+  
+  
+  
+  @import 'media-query';

@@ -1,0 +1,48 @@
+@import 'variable';
+
+@keyframes glowing-stars {
+    0%{
+    
+       opacity: 0;
+    
+      }
+      20%{
+    opacity: 0.7;
+      }
+      40%{
+        opacity: 0.9;
+      }
+      50%{
+        opacity: 1;
+      }
+      60%{
+        opacity: 0.9;
+      }
+      80%{
+        opacity: 0.7;
+      }
+      100%{
+        opacity: 0;
+      }
+    }
+
+    @keyframes stars-point{
+        0%{
+      
+          top: -75px;
+          right: 10px;
+       
+         }
+        
+         50%{
+          top: -95px;
+          right: 25px;
+         }
+        
+         100%{
+          top: -75px;
+          right: 10px;
+         }
+      }
+
+      

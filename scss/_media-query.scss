@@ -1,0 +1,126 @@
+@import 'variable';
+@media screen and (max-width: 768px) {
+     
+  .app-section{
+    background-position: center;
+    background-position-x: right;
+    width: 100%;
+  
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 15px;
+      padding-right: 15px;
+  
+      .app-section__title > a {
+        padding-left: unset;
+      }
+  
+      .app-section__nav > ul {
+        display: none;
+      }
+  
+      .app-section__menu-icon {
+        display: block;
+        color: $main-text-color;
+        font-size: 25px;
+      }
+    }
+  
+    .app-section__animation-divace {
+      position: absolute;
+      top: 68px;
+      right: -5px;
+      >img{
+        width: 480px;
+      }
+    }
+    >.app-section__animation-divace-stars{
+        width:1200px ;
+       position: absolute;
+        animation: stars-point 4s infinite linear;
+        transition: 3ms;
+      }
+}
+    
+  
+    main {
+      >.app-section__sec-two {
+        width: auto;
+        height: auto;
+        background-color: #eeeeee;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        padding-top: 87px;
+        padding: 50px;
+  
+        >.app-section__sec-logo-headline > p {
+          width: 387px;
+        }
+  
+        button {
+          margin-top: unset;
+        }
+  
+        article {
+          width: auto;
+          height: auto;
+          display: grid;
+          justify-content: center;
+          padding: 50px;
+          gap: 40px;
+          grid-template-areas: "left" "right";
+          grid-template-columns: repeat(auto-fit, 416px);
+  
+          >.app-section__item1,
+          >.app-section__item2 {
+            width: 80% !important;
+            margin: auto;
+          }
+  
+          >.app-section__item2 {
+            grid-area: right;
+          }
+  
+          >.app-section__item1 {
+            grid-area: left;
+          }
+
+
+  
+      
+      }
+    }}
+      footer {
+    
+        > .app-section__sec-last {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+           padding-top: 19px;
+           text-align: center;
+           padding-left: unset !important;
+        }
+
+ 
+    }
+  
+    @keyframes stars-point {
+      0% {
+        top: -98px;
+        right: 168px;
+      }
+  
+      50% {
+        top: -105px;
+        right: 185px;
+      }
+  
+      100% {
+        top: -98px;
+        right: 168px;
+      }
+    }
+  }
+  
