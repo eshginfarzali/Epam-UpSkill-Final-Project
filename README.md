@@ -11,3 +11,7 @@
 .app-section__button—read-more (for modifier)
 
 - You have created files dedicated to SASS variables, animations, and mobile queries
+##technologies used
+- HTML
+- CSS
+- SASS
